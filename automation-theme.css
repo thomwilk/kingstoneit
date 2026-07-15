@@ -1,0 +1,38 @@
+/* Task Automation theme override — load this AFTER styles.css.
+   Redefines the same color variables with a Canadian-red/mint palette
+   instead of the site's default red/blue, so the cascade picks up
+   these values while every structural rule in styles.css stays shared. */
+:root{
+  --ink:#171420;
+  --ink-2:#211C2E;
+  --ink-3:#2B2440;
+  --paper:#F6F4FA;
+  --paper-2:#FFFFFF;
+  --teal:#4FD98B;
+  --copper:#D52B1E;
+  --copper-dark:#A81F16;
+  --amber:#F0B429;
+  --ok-green:#5FBE8A;
+  --slate:#5E5B6B;
+  --slate-light:#ADA8C2;
+  --border-light:#E3DFF0;
+  --border-dark:#362F4A;
+}
+
+/* The hero background glow in styles.css hardcodes the default blue as an
+   rgba() (CSS variables can't be used inside rgba() color stops), so it
+   needs its own override here to match the Canadian-red theme. */
+.hero, .page-hero{
+  background:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(213,43,30,0.16), transparent),
+    var(--ink);
+}
+.btn-ghost:hover{
+  background:rgba(79,217,139,0.08);
+}
+.footer-note{
+  color:#8983A0;
+}
+nav{
+  background:rgba(23,20,32,0.92);
+}

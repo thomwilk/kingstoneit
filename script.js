@@ -14,7 +14,7 @@ if (toggle && links) {
 // Opens the Calendly popup if the widget has loaded; otherwise falls back
 // to a normal link click, which opens the Calendly page in a new tab.
 // Replace the URL below with your real Calendly link.
-const CALENDLY_URL = 'https://calendly.com/kingstoneit/session';
+const CALENDLY_URL = 'https://calendly.com/kingstoneit';
 function openCalendly(e) {
   if (window.Calendly) {
     e.preventDefault();

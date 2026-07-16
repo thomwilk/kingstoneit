@@ -253,11 +253,14 @@ nav{
   color:var(--slate-light);
   text-transform:uppercase;
 }
-.board-head span:last-child{
+.board-head span:last-child,
+.board-head a{
   font-family:'IBM Plex Mono', monospace;
   font-size:0.72rem;
   color:var(--ok-green);
+  text-decoration:none;
 }
+.board-head a:hover{text-decoration:underline;}
 .board-row{
   display:flex;
   align-items:center;
@@ -364,6 +367,7 @@ section{padding:88px 0;}
 .dark-section .section-head .eyebrow{color:var(--teal);}
 .dark-section .section-head .eyebrow::before{background:var(--teal);}
 .dark-section .section-head p{color:var(--slate-light);}
+.dark-section .step h3{color:var(--ink);}
 
 /* ---------- SERVICE / OVERVIEW CARDS ---------- */
 .service-grid{
